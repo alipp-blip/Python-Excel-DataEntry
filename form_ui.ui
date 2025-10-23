@@ -44,18 +44,21 @@
      <rect>
       <x>50</x>
       <y>200</y>
-      <width>121</width>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>91</width>
+      <width>0</width>
       <height>41</height>
      </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true">alternate-background-color: rgb(255, 255, 127);</string>
+    </property>
     <property name="text">
-     <string>Operator</string>
+     <string>Operator Name :</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="machine">
@@ -63,12 +66,16 @@
      <rect>
       <x>50</x>
       <y>130</y>
-      <width>121</width>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 127);
+</string>
+    </property>
     <property name="text">
-     <string>Machine ID</string>
+     <string>Machine ID :</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="output">
@@ -76,18 +83,18 @@
      <rect>
       <x>50</x>
       <y>270</y>
-      <width>121</width>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>121</width>
+      <width>0</width>
       <height>41</height>
      </size>
     </property>
     <property name="text">
-     <string>Output</string>
+     <string>Output :</string>
     </property>
    </widget>
    <widget class="QPushButton" name="button_save">
@@ -108,14 +115,32 @@
      <rect>
       <x>50</x>
       <y>30</y>
-      <width>691</width>
-      <height>51</height>
+      <width>821</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>Poppins,Segoe UI,Roboto</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #2ecc71, stop:1 #27ae60
+    );
+    font-family: &quot;Poppins&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;;
+    border-radius: 10px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}</string>
     </property>
     <property name="text">
      <string>Production Line Logger</string>
